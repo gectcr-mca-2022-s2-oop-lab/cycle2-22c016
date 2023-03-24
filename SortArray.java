@@ -11,19 +11,20 @@ public class SortArray {
 		num= in.nextInt();
 		String arrays[]=new String[num];
 		System.out.println("Enter elements of array: ");
+		arrays[0]=in.nextLine();
 		for(i=0;i<num;i++)
 		{
-			arrays[i]=in.next();
+			arrays[i]=in.nextLine();
 		}
-		System.out.println("Original array: ");
-		System.out.println();
+		System.out.print("Original array: ");
+		
 		for(i=0;i<num;i++)
 		{
 			System.out.print(arrays[i] + " ");
 		}
 		System.out.println();
-		System.out.println("Sorted array: ");
-		System.out.println();
+		System.out.print("Sorted array: ");
+//		System.out.println();
 		for(i=0;i<num;i++)
 		{
 			for(int j=i+1;j<num;j++)
